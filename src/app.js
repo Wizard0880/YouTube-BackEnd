@@ -16,7 +16,12 @@ app.use(express.static("public")) //help to make a public folder so that anyone 
 app.use(cookieParser()) // help in accessing the cookies of user's browser from server and also set them (basically CRUD operation).
 
 
- 
+// routes import
+import userRouter from './routes/user.routes.js'
+
+
+// routes declaration
+app.use("/api/v1/users",userRouter)
 
 
 export { app }
