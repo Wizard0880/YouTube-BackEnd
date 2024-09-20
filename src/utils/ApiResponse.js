@@ -8,6 +8,6 @@ class ApiResponse {
 }
 
 
-
+export {ApiResponse}
 // server ke kuch status code hote hai 
 // they have specific range for specific error
